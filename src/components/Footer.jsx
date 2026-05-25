@@ -32,7 +32,7 @@ const Footer = () => {
         </div>
 
         <div className="w-full pt-8 border-t border-gray-600 flex flex-col md:flex-row justify-between items-center text-sm text-gray-400 gap-4">
-          <p>© 2026 KeenKeeper. All rights reserved.</p>
+          <p>© 2026 KeenKeeper. All rights reserved by tonusree devi tuli .</p>
 
           <div className="flex flex-wrap justify-center gap-4 sm:gap-6">
             <span className="hover:text-white cursor-pointer transition-colors">
