@@ -23,13 +23,12 @@ const NavBar = () => {
     <nav className="sticky top-0 z-[100] bg-white border-b border-gray-100 shadow-sm">
       <div className="max-w-7xl mx-auto flex items-center justify-between px-4 sm:px-6 lg:px-10 py-4">
         
-        {/* Logo */}
+
         <div className="text-2xl font-bold tracking-tight">
           <span className="text-[#1a2e35]">Keen</span>
           <span className="text-[#2d4f3e]">Keeper</span>
         </div>
 
-        {/* Desktop links */}
         <div className="hidden md:flex gap-4">
           <NavLink to="/" className={desktopLinkStyle}>
             <Home size={20} />
@@ -47,7 +46,6 @@ const NavBar = () => {
           </NavLink>
         </div>
 
-        {/* Mobile button */}
         <button
           className="md:hidden p-2 text-gray-600 hover:bg-gray-100 rounded-lg"
           onClick={() => setMenuOpen(!menuOpen)}
@@ -56,7 +54,6 @@ const NavBar = () => {
         </button>
       </div>
 
-      {/* Overlay */}
       {menuOpen && (
         <div
           className="fixed inset-0 bg-black/20 backdrop-blur-sm z-40 md:hidden"
@@ -64,7 +61,7 @@ const NavBar = () => {
         />
       )}
 
-      {/* Mobile menu */}
+
       <div
         className={`fixed top-0 right-0 h-full w-[260px] sm:w-[300px] bg-white z-50 shadow-2xl transition-transform duration-300 md:hidden ${
           menuOpen ? "translate-x-0" : "translate-x-full"
