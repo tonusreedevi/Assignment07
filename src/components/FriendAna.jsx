@@ -30,7 +30,7 @@ const FriendAna = ({ events }) => {
 
   const Loader = () => {
     return (
-      <div className="flex justify-center items-center py-32">
+      <div className="flex justify-center items-center py-32 font-[system-ui] font-bold">
         <div className="w-10 h-10 border-4 border-[#1a4a3e] border-t-transparent rounded-full animate-spin"></div>
       </div>
     );
@@ -54,17 +54,17 @@ const FriendAna = ({ events }) => {
   }
 
   return (
-    <div className="max-w-[1000px] mx-auto p-6 sm:p-10 font-['Inter']">
+    <div className="max-w-[1000px] mx-auto p-6 sm:p-10 font-[system-ui] font-bold">
 
       {/* Title */}
-      <h1 className="text-[28px] sm:text-[40px] font-[800] text-[#1a2e35] mb-6 sm:mb-8 font-['Manrope']">
+      <h1 className="text-[28px] sm:text-[40px] font-[800] text-[#1a2e35] mb-6 sm:mb-8 font-[system-ui]">
         Friendship Analytics
       </h1>
 
       {/* Card */}
       <div className="bg-white p-6 sm:p-10 rounded-[25px] border border-gray-100 shadow-sm">
 
-        <h3 className="text-[#1a4a3e] font-bold text-base sm:text-lg mb-6">
+        <h3 className="text-[#1a4a3e] font-bold text-base sm:text-lg mb-6 font-[system-ui]">
           Interaction Overview
         </h3>
 
@@ -94,6 +94,8 @@ const FriendAna = ({ events }) => {
                   borderRadius: "10px",
                   border: "none",
                   boxShadow: "0 4px 12px rgba(0,0,0,0.1)",
+                  fontFamily: "system-ui",
+                  fontWeight: "bold",
                 }}
               />
 
